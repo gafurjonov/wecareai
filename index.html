@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Google Tag Manager -->
+    <script type="text/javascript">
+        window.dataLayer = window.dataLayer || [];
+        window.dataLayer.push({
+            'sitly_platform': 'web-frontend'
+        });
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-WNTK3C3');
+    </script>
+
+    <!-- End Google Tag Manager -->
+
+    <title>WeCare-AI</title>
+
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="/wp-content/themes/sitly__theme/assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width, minimum-scale=1">
+    <meta name="description"
+        content="O'zbekistonda 1000 dan ortiq oilalar, enagalar va bolalarni qaraydiganlar bor. Ehtiyojlaringizga mos keladigan odamni osongina topishingiz mumkin.">
+    <meta property="og:title"
+        content="WeCare-AI | Enagalar, bolalarga qaraydiganlar va bolalarga qarash bo'yicha ishlarni toping" />
+    <meta property="og:description"
+        content="O'zbekistonda 1000 dan ortiq oilalar, enagalar va bolalarni qaraydiganlar bor. Ehtiyojlaringizga mos keladigan odamni osongina topishingiz mumkin." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="" />
+    <meta property="og:image:alt" content="Sitly" />
+    <meta property="og:url" content="" />
+    <meta property="og:site_name" content="Sitly.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="canonical" href="https://www.sitly.com/" />
+
+    <link rel="alternate" href="https://www.sitly.com" hreflang="x-default" />
+    <link rel="alternate" href="https://www.sitly.nl/en" hreflang="en-NL" />
+    <link rel="alternate" href="https://www.sitly.nl" hreflang="nl-NL" />
+    <link rel="alternate" href="https://www.sitly.it/en" hreflang="en-IT" />
+    <link rel="alternate" href="https://www.sitly.it" hreflang="it-IT" />
+    <link rel="alternate" href="https://www.sitly.es/en" hreflang="en-ES" />
+    <link rel="alternate" href="https://www.sitly.es" hreflang="es-ES" />
+    <link rel="alternate" href="https://www.sitly.fi/en" hreflang="en-FI" />
+    <link rel="alternate" href="https://www.sitly.fi" hreflang="fi-FI" />
+    <link rel="alternate" href="https://www.sitly.de/en" hreflang="en-DE" />
+    <link rel="alternate" href="https://www.sitly.de" hreflang="de-DE" />
+    <link rel="alternate" href="https://www.sitly.dk/en" hreflang="en-DK" />
+    <link rel="alternate" href="https://www.sitly.dk" hreflang="da-DK" />
+    <link rel="alternate" href="https://www.sitly.no/en" hreflang="en-NO" />
+    <link rel="alternate" href="https://www.sitly.no" hreflang="nb-NO" />
+    <link rel="alternate" href="https://www.sitly.com.ar/en" hreflang="en-AR" />
+    <link rel="alternate" href="https://www.sitly.com.ar" hreflang="es-AR" />
+    <link rel="alternate" href="https://www.sitly.com.br/en" hreflang="en-BR" />
+    <link rel="alternate" href="https://www.sitly.com.br" hreflang="pt-BR" />
+    <link rel="alternate" href="https://www.sitly.com.mx/en" hreflang="en-MX" />
+    <link rel="alternate" href="https://www.sitly.com.mx" hreflang="es-MX" />
+    <link rel="alternate" href="https://www.sitly.co/en" hreflang="en-CO" />
+    <link rel="alternate" href="https://www.sitly.co" hreflang="es-CO" />
+    <link rel="alternate" href="https://www.sitly.be/en" hreflang="en-BE" />
+    <link rel="alternate" href="https://www.sitly.be" hreflang="nl-BE" />
+    <link rel="alternate" href="https://www.sitly.be/fr" hreflang="fr-BE" />
+    <link rel="alternate" href="https://www.sitly.ca" hreflang="en-CA" />
+    <link rel="alternate" href="https://www.sitly.ca/fr" hreflang="fr-CA" />
+    <link rel="alternate" href="https://www.sitly.my" hreflang="en-MY" />
+    <link rel="alternate" href="https://www.sitly.my/ms" hreflang="ms-MY" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+    </style>
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        #app {
+            min-height: 100%;
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header {
+            background: url('https://cdn.sitly.com/dot-com/top-menu-border.png') no-repeat left bottom;
+            background-size: 100% 17px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 95px;
+            width: 100%;
+        }
+
+        figure {
+            margin: 0;
+        }
+
+        #logo-container {
+            margin-top: -10px;
+        }
+
+        #logo-container img {
+            width: 90px;
+            height: auto;
+        }
+
+        #main-content {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        #blob-container {
+            z-index: 999;
+        }
+
+        #blob-container img {
+            width: 218px;
+            height: auto;
+            border-radius: 50%;
+        }
+
+        #form-container {
+            margin-top: -107px;
+            background: yellow no-repeat center bottom;
+            width: 790px;
+            height: 474px;
+            background-size: contain;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            /* Soft, rounded corners */
+        }
+
+
+        #form-container h1 {
+            font-family: "Lilita One", sans-serif;
+            font-size: 48px;
+            font-weight: 400;
+            margin-top: 75px;
+            margin-bottom: 0;
+        }
+
+        #form-container form {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            margin-top: 40px;
+            align-items: center;
+        }
+
+        #form-container form select {
+            height: 40px;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        #go-to-country-link {
+            width: 356px;
+            height: 20px;
+            border-radius: 16px;
+            margin-top: 11px;
+            background-image: linear-gradient(to right, #AC3B8F 0%, #C93EA5 100%);
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: "Open Sans", sans-serif;
+            font-size: 16px;
+            font-weight: 600;
+            padding: 18px 0px;
+        }
+
+        #go-to-country-link:hover {
+            background-image: linear-gradient(to right, #C93EA5 0%, #AC3B8F 100%);
+        }
+
+        footer {
+            border-top: 2px solid #E8F1F9;
+            width: 100%;
+            margin-top: 50px;
+        }
+
+        #footer-inner {
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 1%;
+            width: 98%;
+            max-width: 1080px;
+        }
+
+        #footer-text-container p {
+            font-family: "Open Sans", sans-serif;
+            font-size: 17px;
+        }
+
+        .custom-dropdown {
+            height: 48px;
+            width: 345px;
+            border-radius: 16px;
+            margin-bottom: 10px;
+            position: relative;
+            background-color: white;
+            cursor: pointer;
+            user-select: none;
+            border: 1px solid #ccc;
+            font-family: "Open Sans", sans-serif;
+            font-size: 17px;
+            color: #333;
+            padding: 0px 5px;
+        }
+
+        .dropdown-selected {
+            padding: 10px;
+            position: relative;
+        }
+
+        .dropdown-selected::after {
+            content: '';
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            border: solid black;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            transform: translateY(-50%) rotate(45deg);
+        }
+
+        .dropdown-options {
+            border-radius: 16px;
+            display: none;
+            position: absolute;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: white;
+            border: 1px solid #ccc;
+        }
+
+        #custom-dropdown-language .dropdown-option:last-of-type,
+        #custom-dropdown-country .dropdown-option:last-of-type {
+            border: none;
+        }
+
+        #custom-dropdown-country .dropdown-options {
+            top: -400px;
+        }
+
+        #custom-dropdown-language .dropdown-options {
+            top: -5px;
+        }
+
+        .dropdown-option {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .dropdown-option:hover {
+            background-color: #eee;
+            border-radius: 16px;
+        }
+
+        #social-icons-container {
+            width: 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #social-icons-container a {
+            height: 30px;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .social-icon {
+            height: 23px;
+        }
+
+        #app-store-icons-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin-left: -33px;
+        }
+
+        .app-store-icon {
+            height: 55px;
+        }
+
+        .app-store-icon img {
+            width: auto;
+            height: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            header {
+                height: 75px;
+            }
+
+            #logo-container {
+                margin-top: -4px;
+                border-radius: 50%;
+            }
+
+            #logo-container img {
+                width: 60px;
+                border-radius: 50%;
+            }
+
+            .img {
+                border-radius: 50%;
+            }
+
+            #main-content {
+                margin: 0;
+            }
+
+            #blob-container {
+                margin-top: 15px;
+                border-radius: 50%;
+            }
+            
+            #form-container {
+                height: 513px;
+                border-radius: 50%;
+            }
+
+            #form-container h1 {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin-top: 50px;
+                font-size: 42px;
+            }
+            
+            #form-container form {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                margin-top: 25px;
+                align-items: center;
+            }
+
+            .custom-dropdown {
+                width: 315px;
+            }
+
+            #go-to-country-link {
+                width: 325px;
+                margin: 0;
+            }
+
+            .heading-spa {
+                display: block;
+            }
+
+            footer {
+                border: 0px;
+                margin: 0;
+            }
+
+            #footer-inner {
+                flex-direction: column-reverse;
+                max-width: 330px;
+                height: 250px;
+            }
+
+            #footer-text-container {
+                align-self: start;
+            }
+
+            #footer-text-container p {
+                font-size: 14px;
+            }
+
+            #social-icons-container {
+                align-self: start;
+            }
+
+            #app-store-icons-container {
+                margin: 0;
+                height: 116px;
+                border-top: 2px solid #E8F1F9;
+                border-bottom: 2px solid #E8F1F9;
+            }
+
+            .app-store-icon {
+                height: 50px;
+            }
+        }
+
+        .disabled {
+            background-color: #bcd0e0;
+            border-color: #4c6377;
+            color: #4c6377;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WNTK3C3" height="0" width="0"
+            style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <div id="app">
+        <section id="main-content">
+            <figure id="blob-container">
+                <img src="WeCare.png" alt="Sitly logo">
+            </figure>
+            <section id="form-container">
+                <h1>
+                    <span class="heading-span">VILOYATINGIZNI</span>
+                    <span class="heading-span">TANLANG</span>
+                </h1>
+                <form action="">
+                    <div class="custom-dropdown" id="custom-dropdown-country">
+                        <div class="dropdown-selected" data-selected="">Viloyat</div>
+                        <div class="dropdown-options" id="custom-dropdown-country-options">
+                        </div>
+                    </div>
+                    <div class="custom-dropdown" id="custom-dropdown-language">
+                        <style>
+                            /* Viloyat Dropdown */
+                            #custom-dropdown-country {
+                                background-color: #FFFFFF;
+                                /* White */
+                                border: 1px solid #6B8E23;
+                                border-radius: 5px;
+                                padding: 5px;
+                                cursor: pointer;
+                            }
+
+                            /* Til Dropdown */
+                            #custom-dropdown-language {
+                                background-color: #FFFFE0;
+                                /* Light Yellow */
+                                border: 1px solid #6B8E23;
+                                border-radius: 5px;
+                                padding: 5px;
+                                cursor: pointer;
+                            }
+
+                            /* Selected Items */
+                            .dropdown-selected {
+                                padding: 10px;
+                                border-radius: 5px;
+                            }
+
+                            /* Dropdown Options (Same for both) */
+                            .dropdown-options {
+                                background-color: #FFFFFF;
+                                /* White */
+                                border: 1px solid #6B8E23;
+                                border-radius: 5px;
+                                padding: 5px;
+                                display: none;
+                                position: absolute;
+                                width: 150px;
+                            }
+
+                            /* Option Items */
+                            .dropdown-options div {
+                                padding: 10px;
+                                cursor: pointer;
+                            }
+
+                            /* Hover Effect */
+                            .dropdown-options div:hover {
+                                background-color: #F0F0F0;
+                                /* Light gray on hover */
+                            }
+                        </style>
+                        <div class="dropdown-selected" data-selected="">Til</div>
+                        <div class="dropdown-options" id="custom-dropdown-language-options">
+                        </div>
+                    </div>
+                    <a id="go-to-country-link" href="indexpage.html" class="btn btn-primary">Davom etish</a>
+                </form>
+            </section>
+        </section>
+        <footer>
+            <div id="footer-inner">
+                <div id="footer-text-container">
+                    <p>© <span class="footer-year"></span> WeCare-AI</p>
+                </div>
+                <div id="app-store-icons-container">
+                    <a id="app-store-icon-google" class="app-store-icon" target="_blank"
+                        href='https://play.google.com/store/apps/details?id=com.sitly.app'>
+
+                        <a id="app-store-icon-apple " class="app-store-icon" target="_blank"
+                            href='https://apps.apple.com/ca/app/sitly-the-babysitter-app/id1266270476'>
+
+                        </a>
+                </div>
+                <div id="social-icons-container">
+                    <a href="https://www.facebook.com/sitlydotcom" target="_blank">
+                        <img class="social-icon" src="https://cdn.sitly.com/dot-com/facebook-logo.svg"
+                            alt="Sitly Facebook page">
+                    </a>
+                    <a href="https://www.tiktok.com/@sitly.com" target="_blank">
+                        <img class="social-icon" src="https://cdn.sitly.com/dot-com/tiktok-logo.svg"
+                            alt="Sitly TikTok account">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            const regions = {
+                an: { text: "Andijon", url: "" },
+                bu: { text: "Buxoro", url: "" },
+                fa: { text: "Farg'ona", url: "" },
+                ji: { text: "Jizzax", url: "" },
+                nq: { text: "Navoiy", url: "" },
+                ng: { text: "Namangan", url: "" },
+                qa: { text: "Qashqadaryo", url: "" },
+                qr: { text: "Qoraqalpog'iston", url: "" },
+                sa: { text: "Samarqand", url: "" },
+                si: { text: "Sirdaryo", url: "" },
+                su: { text: "Surxondaryo", url: "" },
+                to: { text: "Toshkent viloyati", url: "" },
+                tx: { text: "Toshkent shahar", url: "" },
+                xo: { text: "Xorazm", url: "" }
+            };
+
+            const languages = [
+                { text: "O'zbek tili", url: "/uz" },
+                { text: "Rus tili", url: "/ru" }
+            ];
+
+            const countryDropdown = document.getElementById("custom-dropdown-country");
+            const languageDropdown = document.getElementById("custom-dropdown-language");
+            const countrySelected = countryDropdown.querySelector(".dropdown-selected");
+            const countryOptions = document.getElementById("custom-dropdown-country-options");
+            const languageSelected = languageDropdown.querySelector(".dropdown-selected");
+            const languageOptions = document.getElementById("custom-dropdown-language-options");
+            const goToLink = document.getElementById("go-to-country-link");
+
+            // Populate regions dropdown
+            for (const [code, region] of Object.entries(regions)) {
+                const option = document.createElement("div");
+                option.classList.add("dropdown-option");
+                option.dataset.value = code;
+                option.textContent = region.text;
+                countryOptions.appendChild(option);
+            }
+
+            // Toggle dropdown visibility
+            function toggleOptions(options) {
+                options.style.display = options.style.display === "block" ? "none" : "block";
+            }
+
+            countrySelected.addEventListener("click", () => toggleOptions(countryOptions));
+            languageSelected.addEventListener("click", () => {
+                if (!countrySelected.dataset.selected) return;
+                toggleOptions(languageOptions);
+            });
+
+            // Event delegation for country selection
+            countryOptions.addEventListener("click", function (e) {
+                if (!e.target.classList.contains("dropdown-option")) return;
+
+                const selectedRegion = e.target.dataset.value;
+                countrySelected.textContent = e.target.textContent;
+                countrySelected.dataset.selected = selectedRegion;
+                countryOptions.style.display = "none";
+
+                // Populate language dropdown
+                languageOptions.innerHTML = "";
+                languages.forEach(language => {
+                    const langOption = document.createElement("div");
+                    langOption.classList.add("dropdown-option");
+                    langOption.dataset.value = language.url;
+                    langOption.textContent = language.text;
+                    languageOptions.appendChild(langOption);
+                });
+
+                // Reset language dropdown
+                languageSelected.textContent = "Til";
+                languageSelected.dataset.selected = "";
+                languageDropdown.classList.remove("disabled");
+            });
+
+            // Event delegation for language selection
+            languageOptions.addEventListener("click", function (e) {
+                if (!e.target.classList.contains("dropdown-option")) return;
+
+                languageSelected.textContent = e.target.textContent;
+                languageSelected.dataset.selected = e.target.dataset.value;
+                languageOptions.style.display = "none";
+            });
+
+            // Close dropdowns when clicking outside
+            window.addEventListener("click", function (e) {
+                if (!countryDropdown.contains(e.target)) countryOptions.style.display = "none";
+                if (!languageDropdown.contains(e.target)) languageOptions.style.display = "none";
+            });
+
+            // Redirect logic
+            goToLink.addEventListener("click", function (e) {
+                const country = countrySelected.dataset.selected;
+                const language = languageSelected.dataset.selected;
+
+                if (!country) {
+                    countryOptions.style.display = "block";
+                    e.preventDefault();
+                    return;
+                }
+
+                if (!language) {
+                    languageOptions.style.display = "block";
+                    e.preventDefault();
+                    return;
+                }
+
+                location.href = regions[country].url + language;
+            });
+
+            // Set footer year if it exists
+            const footerYear = document.querySelector(".footer-year");
+            if (footerYear) footerYear.innerText = new Date().getFullYear();
+        });
+    </script>
+    <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js"
+        data-cf-settings="8a2130246e3b4b5213a6554a-|49" defer></script>
+    <script defer
+        src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015"
+        integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ=="
+        data-cf-beacon='{"rayId":"9200f7c048d482b2","serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"version":"2025.1.0","token":"6dab44a6ecbb45cdb2b017c5886065e5"}'
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
